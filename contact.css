@@ -1,4 +1,13 @@
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;  /* 1rem = 10px */
+}
+
 .topnav {
     display: flex;
     justify-content: space-evenly;
@@ -17,6 +26,7 @@
 
      /* Header Styles */
      header {
+        align-items: center;
         background-color: black;
         color: #ffffff;
         display: flex;
@@ -45,7 +55,7 @@
         padding: 0;
     }
 
-    h1 {
+    h1, h2, p {
         margin-top: 30px;
         text-align: center;
     }

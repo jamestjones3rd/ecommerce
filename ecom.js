@@ -1,20 +1,54 @@
-//Slideshow for homepage
-let slideshows = document.querySelectorAll('[data-component="slideshow"]');
+'use strict'
 
-// JavaScript code using jQuery library
-$(document).ready(function(){
-    // Set variables
-    var slides = $('.slider img');
-    var currentSlide = 0;
-    var slideInterval = setInterval(nextSlide,3000);
-  
-    // Define function to advance to the next slide
-    function nextSlide() {
-      $(slides[currentSlide]).fadeOut(2000);
-      currentSlide = (currentSlide+1)%slides.length;
-      $(slides[currentSlide]).fadeIn(2000);
-    }
-  });
+var i = 0;
+
+var img = [];
+
+var time = 5000; 
+
+
+//image list
+
+img[0] = '/img/game.jpeg'
+
+img[1] = '/img/homeimage.jpeg'
+
+img[2] = '/img/OG GAMES.png'
+
+//change image
+
+function slideShow(){
+
+document.slide.src = img[i];
+
+if(i < img.length - 1){
+ i++;
+}else{
+    i = 0;
+}
+
+//This method calls a function after a number of milisecconds ex. 1sec = 1000 miliseconds
+
+setTimeout("slideShow()",time)
+}
+
+
+//This will load the slideshow imedditely when the page loads
+window.onload = slideShow;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Ajax request to fetch to request the data from JSON file
@@ -50,14 +84,14 @@ if(this.readyState == 4 && this.status == 200){
 
     //loop through products and in every iteration
     //add an html template to the output variable
-    for(let items of products){
+    for(let item of products){
         output += `
         <div class='product'>
             <img src='${item.image}' alt='${item.image}'></img>
-            <p class="title">${item.image}</p>
-            <p class="description">${item.image}</p>
+            <p class="title">${item.title}</p>
+            <p class="description">${item.description}</p>
             <p class="price">
-                <span>${item.image}</span>
+                <span>${item.price}</span>
                 <span>&euro;</span>
             </p>
         </div>
@@ -67,9 +101,11 @@ if(this.readyState == 4 && this.status == 200){
     document.querySelector(".products").innerHTML = output;
     }
 }
-fetch('myData.json')
-  .then(response => response.json())
-  .then(data => {
-    // Your code to work with the JSON data goes here
-    console.log(data);
-  });
+
+
+// fetch('myData.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     // Your code to work with the JSON data goes here
+//     console.log(data);
+//   });

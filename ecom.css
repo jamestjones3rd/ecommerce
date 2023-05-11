@@ -1,3 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;  /* 1rem = 10px */
+}
+
+
 
 .topnav {
     text-decoration: solid;
@@ -19,6 +29,7 @@
 
   /* Header Styles */
 header {
+  align-items: center;
     background-color: #FDB750;
     color: #ffffff;
     display: flex;
@@ -27,7 +38,7 @@ header {
     width:100%
   }
   
-  nav ul {
+  /* nav ul {
     display: flex;
     list-style: none;
   }
@@ -39,13 +50,25 @@ header {
   nav ul li a {
     color: #ffffff;
     text-decoration: none;
-  }
+  } */
   
   /* Main Styles */
   main {
     padding: 20px;
   }
   
+/* HERO SLIDER */
+
+.slider img{
+    height:40rem;
+    width: auto;
+}
+
+
+
+
+
+  /* HERO TITLE */
   .hero {
     align-items: center;
     background-image: url('');
@@ -55,16 +78,17 @@ header {
     display: flex;
     flex-direction: column;
     height: 500px;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
+    height:80vh
   }
   
-  .hero h2 {
+  .hero-title h2 {
     font-size: 3em;
     margin: 0;
   }
   
-  .hero p {
+  .hero-title p {
     font-size: 1.5em;
     margin: 0;
   }
@@ -94,7 +118,7 @@ header {
     width: 100%;
     background-color: #1c1c1c;
     color: #ffffff;
-    padding: 1rem;
+    padding: 3rem;
     text-align: center;
   }
 

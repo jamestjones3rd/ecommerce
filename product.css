@@ -1,4 +1,13 @@
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;  /* 1rem = 10px */
+}
+
 .topnav {
     display: flex;
     justify-content: space-evenly;
@@ -24,6 +33,7 @@ header {
     justify-content: space-between;
     padding: 20px;
   }
+
   
   nav ul {
     display: flex;
