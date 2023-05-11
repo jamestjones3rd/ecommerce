@@ -1,0 +1,116 @@
+
+.topnav {
+    display: flex;
+    justify-content: space-evenly;
+    float: left;
+    color: black;
+    background-color: #FC2E20;
+    text-align: center;
+    padding: 2rem;
+    text-decoration: none;
+    width: 100%;
+    font-size: 17px;}
+
+  a:visited{
+    color:black;
+  }
+
+     /* Header Styles */
+     header {
+        background-color: black;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      
+      nav ul li {
+        margin: 0 10px;
+      }
+      
+      nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      
+      /* Main Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    form {
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        max-width: 50rem;
+        padding: 5rem;
+        background-color: gray;
+        border-radius: 1rem;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+
+    input[type="email"],
+    input[type="text"]{
+        display: block;
+        width: 100%;
+        padding: .5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    input[type="comment"] {
+        display: block;
+        width: 100%;
+        padding: 2rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #FC2E20;
+    }
+      
+
+      
+      button:hover {
+        background-color: #343434;
+      }
+      
+      /* Footer Styles */
+      footer {
+        background-color: #1c1c1c;
+        color: #ffffff;
+        padding: .5rem;
+        text-align: center;
+      }
